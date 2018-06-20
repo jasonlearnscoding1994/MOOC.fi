@@ -1,5 +1,6 @@
 // Exercise 24: NHL statistics, part 2
-// Create a program that wllows the user to query for statistics.
+// Create a program that allows the user to query for statistics.
+
 import java.util.Scanner;
 import nhlstats.NHLStatistics;
 
