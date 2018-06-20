@@ -1,0 +1,17 @@
+// Exercise 7: Multiplication
+// Create a program that will multiply two numbers. Two variables are used to 
+// store and hold numbers.
+
+public class Multiplication {
+
+    public static void main(String[] args) {
+
+        int a = 1337;
+        int b = 42;
+        int c = a * b;
+        
+        String multiplied = a + " * " + b + " = " + c;
+        System.out.println(multiplied);
+    }
+
+}

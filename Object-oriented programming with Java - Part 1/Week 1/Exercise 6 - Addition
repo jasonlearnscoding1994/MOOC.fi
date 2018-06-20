@@ -1,0 +1,18 @@
+// Exercise 6: Addition
+// Create a program to calculate the sum of two numbers. Two variables are used 
+// to store and hold numbers to be summed.
+
+public class Addition {
+
+    public static void main(String[] args) {
+
+        int a = 1337;
+        int b = 42;
+        int result = a + b; 
+
+        String toPrint = a + " + " + b + " = " + result;
+        System.out.println(toPrint);
+
+    }
+
+}

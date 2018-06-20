@@ -1,0 +1,36 @@
+// Exercise 13: NHL Statistics, part 1
+// Main program imports a ready-made component NHLStatistics included along with
+// this exercise.
+
+// Import component containing NHL players' score data, including their number 
+// of played games, goals, assists, points, and penalty amount.
+
+import java.util.Scanner;
+import nhlstats.NHLStatistics; 
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner reader = new Scanner(System.in);
+        
+        System.out.println("Top ten by goals");
+        NHLStatistics.sortByGoals(); // Orders the players by goals
+        NHLStatistics.top(10); // Print top ten players based on goals
+        
+        System.out.println("");
+        
+        System.out.println("Top 25 players by penalty");
+        NHLStatistics.sortByPenalties(); // Orders the players by penalty minutes
+        NHLStatistics.top(25);  // Print top 25 players based on penalty amounts
+        
+        System.out.println("");
+        
+        NHLStatistics.searchByPlayer("Sidney Crosby"); // Print statistics for Sidney Crosby
+        
+        System.out.println("");
+        NHLStatistics.teamStatistics("PHI"); // Print statistics for Philadelphia Flyers 
+        
+        System.out.println("");
+        NHLStatistics.sortByPoints(); // Orders the players by points
+        NHLStatistics.teamStatistics("ANA"); // Print players in Anaheim Ducks ordered by points
+    }
+}
